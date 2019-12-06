@@ -304,6 +304,17 @@
         }
       }
     },
+    
+    "kind": "ImageStream",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "${DATABASE_SERVICE_NAME}",
+        "annotations": {
+          "description": "Keeps track of changes in the application image"
+        }
+      }
+    },
+    
     {
       "kind": "DeploymentConfig",
       "apiVersion": "v1",
